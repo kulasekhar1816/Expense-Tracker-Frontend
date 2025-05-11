@@ -23,7 +23,7 @@ function AddExpense({name, expenseToEdit=null, expense_id=null, onClose}) {
         try {
             const token = localStorage.getItem("token");
             if (expenseToEdit) {
-                await axios.put(`http://localhost:8000/expenses/${expense_id}`, expData, {
+                await axios.put(`https://expense-tracker-backend-xy4h.onrender.com/expenses/${expense_id}`, expData, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
