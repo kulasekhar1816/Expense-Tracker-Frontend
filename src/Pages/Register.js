@@ -25,7 +25,7 @@ const Register = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8000/auth/register", {
+            const response = await axios.post("https://expense-tracker-backend-xy4h.onrender.com/auth/register", {
                 username: formData.username,
                 password: formData.password,
                 email: formData.email,
