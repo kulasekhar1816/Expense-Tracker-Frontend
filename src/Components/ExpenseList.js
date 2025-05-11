@@ -29,7 +29,7 @@ const ExpenseList = ({ expenses, onDelete, onEdit }) => {
   const handleEdit = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get(`http://localhost:8000/expenses/${id}`, {
+      const response = await axios.get(`https://expense-tracker-backend-xy4h.onrender.com/expenses/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
