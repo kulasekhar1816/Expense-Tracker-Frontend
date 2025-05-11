@@ -44,7 +44,7 @@ const ExpenseList = ({ expenses, onDelete, onEdit }) => {
   const handleDelete = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:8000/expenses/${id}`, {
+      await axios.delete(`https://expense-tracker-backend-xy4h.onrender.com/expenses/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
