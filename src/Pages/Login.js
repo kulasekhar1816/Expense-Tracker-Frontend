@@ -19,7 +19,7 @@ const Login = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8000/auth/login", {
+            const response = await axios.post("https://expense-tracker-backend-xy4h.onrender.com/auth/login", {
                 username: formData.username,
                 password: formData.password,
             });
