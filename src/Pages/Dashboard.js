@@ -15,7 +15,7 @@ function Dashboard() {
     const fetchExpenses = async () => {
             try {
                 const token = localStorage.getItem("token");
-                const response = await axios.get("http://localhost:8000/expenses", {
+                const response = await axios.get("https://expense-tracker-backend-xy4h.onrender.com/expenses", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
