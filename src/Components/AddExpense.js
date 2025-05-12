@@ -34,7 +34,7 @@ function AddExpense({name, expenseToEdit=null, expense_id=null, onClose}) {
             });
             onClose();
             } else {
-                await axios.post("http://localhost:8000/expenses", expData, {
+                await axios.post("https://expense-tracker-backend-xy4h.onrender.com/expenses/", expData, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
