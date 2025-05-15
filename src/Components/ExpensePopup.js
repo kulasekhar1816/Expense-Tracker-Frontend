@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import axios from "axios"
 import { Snackbar } from "@mui/material";
 
-function AddExpense({name, expenseToEdit=null, expense_id=null, onClose}) {
+function ExpensePopup({name, expenseToEdit=null, expense_id=null, onClose}) {
     const [snackbar, setSnackbar] = useState({
         open:false,
         message:""
@@ -103,4 +103,4 @@ function AddExpense({name, expenseToEdit=null, expense_id=null, onClose}) {
     );
 };
 
-export default AddExpense;
+export default ExpensePopup;

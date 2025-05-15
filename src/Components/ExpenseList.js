@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Snackbar } from '@mui/material';
-import AddExpense from "./AddExpense";
+import ExpensePopup from "./ExpensePopup";
 
 const ExpenseList = ({ expenses, onDelete, onEdit }) => {
   const [expenseToEdit, setExpenseToEdit] = useState({});
@@ -105,7 +105,7 @@ const ExpenseList = ({ expenses, onDelete, onEdit }) => {
 
       {/* Edit Expense Modal */}
       {editExp && (
-            <AddExpense
+            <ExpensePopup
               name="Edit"
               expenseToEdit={expenseToEdit}
               expense_id={editExp}
