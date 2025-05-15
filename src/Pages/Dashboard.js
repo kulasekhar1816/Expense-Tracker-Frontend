@@ -18,7 +18,7 @@ function Dashboard() {
     const handleSaveLimit  = async (limit) => {
         try {
             const token = localStorage.getItem("token");
-            const res = await axios.put("http://localhost:8000/auth/limit", 
+            const res = await axios.put("https://expense-tracker-backend-xy4h.onrender.com/auth/limit", 
                 { daily_limit: limit },
                 {
                 headers: { Authorization: `Bearer ${token}` }
