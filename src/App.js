@@ -20,7 +20,11 @@ function App() {
     <div>
       <Router>
         <Routes>
+<<<<<<< HEAD
           <Route path='/' element={<Navigate to="/login" />} /> {/* Redirect root path to /login */}
+=======
+          <Route path='/' element={<Login />} /> {/* Redirect root path to /login */}
+>>>>>>> EXPF-001
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/dashboard' element={<Dashboard />} />

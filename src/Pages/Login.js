@@ -26,8 +26,10 @@ const Login = () => {
             console.log(response);
             const token = response.data.access_token;
             const user_id = response.data.user_id;
+            const daily_limit = response.data.daily_limit
             localStorage.setItem("token", token);
             localStorage.setItem("user_id",user_id);
+            localStorage.setItem("daily_limit",daily_limit);
             localStorage.setItem("user", formData.username)
             setError("");
             setSnackbar({
